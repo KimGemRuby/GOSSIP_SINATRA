@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1>PAGE POTIN</h1>
+    <h2>Voici la page du potin n°<%= gossip_numb %></h2>
+    <p>Son auteur : <%= ragots[gossip_numb.to_i-1].author %></p>
+    <p>Le contenu du potin : <%= ragots[gossip_numb.to_i-1].content %></p>
+    <a href="/">Revenir à la liste des gossips</a>
+    <a href="/gossip/<%= gossip_numb%>/edit/" style="display:block;">Editer ce potin</a>
+  </body>
+</html>

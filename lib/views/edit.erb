@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gossip Project</title>
+    <style>
+  </head>
+  <body>
+  <header>
+      <ul>
+        <li><a href = "/">Home</a></li>
+        <li><a href = "/gossips/new/">Nouveau potin</a></li>
+  <h1>Editer le potin n°<%=params[:num_edit]%></h1>
+    <form action='/gossip/<%=gossip_numb%>/edit/' method='POST'>
+        Editer l auteur :  <input type="text" name="gossip_author_updated"/><br/>
+        Editer le contenu : <input type="text" name="gossip_content_updated"/><br/>
+        <p>déso pour lortographe 😄</p>
+      <input type="submit"/>
+    </form>
+  </body>
+</html>
